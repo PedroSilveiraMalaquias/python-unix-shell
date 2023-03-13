@@ -1,0 +1,27 @@
+cd ./teste
+mkdir teste_interno
+pwd
+touch file1.txt
+pwd > file1.txt
+cp file1.txt file2.txt
+mv file1.txt teste_interno/file1.txt
+rm file1.txt
+rm ./teste_interno/file1.txt
+ls
+cd teste_interno
+cat file1.txt
+touch file1.txt
+echo "Hello, world!" > file1.txt
+cat file1.txt
+rm file1.txt
+cd ..
+rmdir teste_interno
+touch file1.txt
+echo file2.txt > file1.txt | echo Hello From File 2 > file2.txt
+cat < file1.txt
+touch log.txt
+ls > log.txt
+cp file1.txt file2.txt &
+echo EMPTY > file1.txt
+cat < file2.txt > file1.txt
+ls | echo > log.txt
